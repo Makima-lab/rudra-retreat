@@ -19,9 +19,11 @@ export default function Place() {
             {place.text}
           </p>
         </Reveal>
-        <Reveal delay={0.3}>
-          <p className="mt-10 font-sans text-xs text-cream/35">{place.note}</p>
-        </Reveal>
+        {place.note && (
+          <Reveal delay={0.3}>
+            <p className="mt-10 font-sans text-xs text-cream/35">{place.note}</p>
+          </Reveal>
+        )}
       </div>
     </section>
   )
