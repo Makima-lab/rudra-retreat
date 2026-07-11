@@ -50,6 +50,7 @@ export const corridor = {
 }
 
 export const howItWorks = {
+  eyebrow: 'Течение ретрита',
   title: 'Как устроен ретрит',
   cards: [
     {
@@ -70,6 +71,7 @@ export const howItWorks = {
 export const showSchedule = true
 
 export const schedule = {
+  eyebrow: 'Ритм дня',
   title: 'Расписание дня',
   caption: 'Ритм дня может меняться по состоянию группы и энергии дня.',
   items: [
@@ -88,6 +90,7 @@ export const schedule = {
 }
 
 export const place = {
+  eyebrow: 'Место',
   title: 'Где мы будем',
   text: 'Ретрит-центр «Лето», посёлок Вардане, Сочи. Берег Чёрного моря в шаге. Чистое пространство, тишина, природа.',
   note: '',

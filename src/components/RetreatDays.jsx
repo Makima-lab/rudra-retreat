@@ -1,19 +1,21 @@
 import Reveal from './Reveal'
+import GoldMotif from './GoldMotif'
+import GoldDivider from './GoldDivider'
 import { retreatDays } from '../content'
 
 export default function RetreatDays() {
   return (
     <section className="relative flex min-h-svh flex-col items-center justify-center bg-night px-6 py-32 sm:py-40">
       <div className="mx-auto w-full max-w-3xl">
-        <Reveal className="text-center">
+        <Reveal className="flex flex-col items-center text-center">
+          <GoldMotif className="mb-7" />
           <span className="font-sans text-[11px] tracking-[0.4em] text-gold uppercase">
             {retreatDays.eyebrow}
           </span>
-        </Reveal>
-        <Reveal delay={0.12} className="text-center">
           <h2 className="mt-6 font-serif text-4xl font-medium text-cream sm:text-5xl">
             {retreatDays.title}
           </h2>
+          <GoldDivider className="mt-8" />
         </Reveal>
 
         <div className="mt-16 space-y-px">
