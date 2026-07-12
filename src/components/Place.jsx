@@ -1,15 +1,13 @@
 import Reveal from './Reveal'
 import GoldMotif from './GoldMotif'
 import GoldDivider from './GoldDivider'
+import VideoBackground from './VideoBackground'
 import { place } from '../content'
 
 export default function Place() {
   return (
-    <section className="relative flex min-h-svh flex-col items-center justify-center overflow-hidden bg-deep/25 px-6 py-32 sm:py-40">
-      <div
-        className="pointer-events-none absolute left-1/2 top-0 h-[600px] w-[1000px] -translate-x-1/2 rounded-full opacity-15"
-        style={{ background: 'radial-gradient(circle, #C9A24B 0%, transparent 60%)' }}
-      />
+    <section className="relative flex min-h-svh flex-col items-center justify-center overflow-hidden bg-night px-6 py-32 sm:py-40">
+      <VideoBackground src="place.mp4" poster="place-poster.jpg" />
       <div className="relative mx-auto flex max-w-2xl flex-col items-center text-center">
         <Reveal className="flex flex-col items-center">
           <GoldMotif className="mb-7" />
