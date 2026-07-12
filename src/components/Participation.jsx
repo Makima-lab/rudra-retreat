@@ -1,6 +1,6 @@
 import Reveal from './Reveal'
 import SeaBackground from './SeaBackground'
-import { participation, telegramLink } from '../content'
+import { participation, telegramLink, retreatPhone } from '../content'
 
 export default function Participation() {
   return (
@@ -30,6 +30,17 @@ export default function Participation() {
           </a>
         </Reveal>
         <Reveal delay={0.4}>
+          <p className="mt-6 font-sans text-sm text-cream/55">
+            {participation.phoneLabel}{' '}
+            <a
+              href={`tel:${retreatPhone.tel}`}
+              className="text-gold transition-colors duration-300 hover:text-glow"
+            >
+              {retreatPhone.display}
+            </a>
+          </p>
+        </Reveal>
+        <Reveal delay={0.5}>
           <p className="mt-8 font-sans text-xs text-cream/35">{participation.smallNote}</p>
         </Reveal>
       </div>

@@ -21,6 +21,9 @@ export default function Footer() {
         >
           {footer.vk.label}
         </a>
+        <a href={footer.phone.url} className="transition-colors hover:text-gold">
+          {footer.phone.label}
+        </a>
       </div>
     </footer>
   )

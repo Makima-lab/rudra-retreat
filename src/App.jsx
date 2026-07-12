@@ -6,6 +6,7 @@ import RetreatDays from './components/RetreatDays'
 import Schedule from './components/Schedule'
 import Place from './components/Place'
 import Stay from './components/Stay'
+import Consultations from './components/Consultations'
 import Participation from './components/Participation'
 import Footer from './components/Footer'
 import { showSchedule } from './content'
@@ -21,6 +22,7 @@ function App() {
       {showSchedule && <Schedule />}
       <Place />
       <Stay />
+      <Consultations />
       <Participation />
       <Footer />
     </div>

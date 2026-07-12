@@ -26,8 +26,25 @@ export default function Place() {
             {place.text}
           </p>
         </Reveal>
+        {place.link && (
+          <Reveal delay={0.25}>
+            <a
+              href={place.link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-8 inline-flex items-center gap-2 font-sans text-sm tracking-wide text-gold transition-colors duration-300 hover:text-glow"
+            >
+              <span className="border-b border-gold/40 pb-0.5 transition-colors duration-300 group-hover:border-glow">
+                {place.link.label}
+              </span>
+              <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </a>
+          </Reveal>
+        )}
         {place.note && (
-          <Reveal delay={0.3}>
+          <Reveal delay={0.35}>
             <p className="mt-10 font-sans text-xs text-cream/35">{place.note}</p>
           </Reveal>
         )}
