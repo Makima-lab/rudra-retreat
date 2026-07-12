@@ -135,6 +135,6 @@ export const participation = {
 export const footer = {
   line: 'Ом Намах Шивая · Ашрам Рудра',
   telegram: { label: 'Telegram', url: 'https://t.me/rudra_samara' },
-  vk: { label: 'ВКонтакте', url: 'https://vk.com/rudrasamara' },
+  vk: { label: 'ВКонтакте', url: 'https://vk.ru/rudrasamara' },
   phone: { label: retreatPhone.display, url: `tel:${retreatPhone.tel}` },
 }
