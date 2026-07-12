@@ -37,6 +37,14 @@ export default function RetreatDays() {
             </Reveal>
           ))}
         </div>
+
+        {retreatDays.caption && (
+          <Reveal delay={0.2}>
+            <p className="mt-14 text-center font-sans text-xs italic leading-relaxed text-cream/40">
+              {retreatDays.caption}
+            </p>
+          </Reveal>
+        )}
       </div>
     </section>
   )
