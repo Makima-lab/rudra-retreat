@@ -25,12 +25,10 @@ export default function Place() {
           </p>
         </Reveal>
         {place.link && (
-          <Reveal delay={0.25}>
+          <Reveal delay={0.25} className="mt-8 flex flex-col items-center gap-2">
             <a
               href={place.link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group mt-8 inline-flex items-center gap-2 font-sans text-sm tracking-wide text-gold transition-colors duration-300 hover:text-glow"
+              className="group inline-flex items-center gap-2 font-sans text-sm tracking-wide text-gold transition-colors duration-300 hover:text-glow"
             >
               <span className="border-b border-gold/40 pb-0.5 transition-colors duration-300 group-hover:border-glow">
                 {place.link.label}
@@ -39,6 +37,9 @@ export default function Place() {
                 →
               </span>
             </a>
+            <span className="font-sans text-xs tracking-wide text-cream/40">
+              {place.link.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+            </span>
           </Reveal>
         )}
         {place.note && (

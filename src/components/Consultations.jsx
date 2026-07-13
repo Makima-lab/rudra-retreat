@@ -51,8 +51,6 @@ export default function Consultations() {
             <span className="hidden text-cream/25 sm:inline">·</span>
             <a
               href={telegramLink}
-              target="_blank"
-              rel="noopener noreferrer"
               className="transition-colors duration-300 hover:text-gold"
             >
               Telegram

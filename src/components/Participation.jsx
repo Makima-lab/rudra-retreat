@@ -21,8 +21,6 @@ export default function Participation() {
         <Reveal delay={0.3}>
           <a
             href={telegramLink}
-            target="_blank"
-            rel="noopener noreferrer"
             className="group relative mt-14 inline-block rounded-full border border-gold/50 px-10 py-4 font-sans text-sm tracking-[0.08em] text-cream transition-all duration-500 ease-out hover:border-gold hover:shadow-[0_0_36px_-4px_rgba(201,162,75,0.55)]"
           >
             <span className="absolute inset-0 rounded-full bg-gold/0 transition-colors duration-500 ease-out group-hover:bg-gold/10" />

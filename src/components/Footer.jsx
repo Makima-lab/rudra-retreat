@@ -7,16 +7,12 @@ export default function Footer() {
       <div className="mt-6 flex justify-center gap-8 font-sans text-sm text-cream/40">
         <a
           href={footer.telegram.url}
-          target="_blank"
-          rel="noopener noreferrer"
           className="transition-colors hover:text-gold"
         >
           {footer.telegram.label}
         </a>
         <a
           href={footer.vk.url}
-          target="_blank"
-          rel="noopener noreferrer"
           className="transition-colors hover:text-gold"
         >
           {footer.vk.label}

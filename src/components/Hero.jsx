@@ -47,8 +47,6 @@ export default function Hero() {
 
       <motion.a
         href={telegramLink}
-        target="_blank"
-        rel="noopener noreferrer"
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8, ease: easeOut }}

@@ -49,8 +49,6 @@ export default function Stay() {
           </a>
           <a
             href={hotelUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="group mt-6 inline-flex items-center gap-2 font-sans text-sm tracking-wide text-cream/60 transition-colors duration-300 hover:text-gold"
           >
             <span className="border-b border-cream/20 pb-0.5 transition-colors duration-300 group-hover:border-gold">
@@ -60,6 +58,9 @@ export default function Stay() {
               →
             </span>
           </a>
+          <span className="mt-2 font-sans text-xs tracking-wide text-cream/40">
+            {hotelUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+          </span>
         </Reveal>
       </div>
     </section>
