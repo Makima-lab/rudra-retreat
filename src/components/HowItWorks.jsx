@@ -18,7 +18,7 @@ export default function HowItWorks() {
           <GoldDivider className="mt-8" />
         </Reveal>
 
-        <div className="mt-20 grid gap-x-12 gap-y-16 sm:grid-cols-3">
+        <div className="mx-auto mt-20 grid max-w-3xl gap-x-12 gap-y-16 sm:grid-cols-2">
           {howItWorks.cards.map((card, i) => (
             <Reveal key={card.title} delay={i * 0.15}>
               <div className="relative pt-8 text-left">
